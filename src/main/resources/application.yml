@@ -1,0 +1,8 @@
+javafx:
+  title: 更多脚本请私Q:251152685
+  appicons: /icon/icon.png
+  stage:
+    width: 640
+    height: 480
+#    style: DECORATED  # javafx.stage.StageStyle [DECORATED, UNDECORATED, TRANSPARENT, UTILITY, UNIFIED]
+#    resizable: false

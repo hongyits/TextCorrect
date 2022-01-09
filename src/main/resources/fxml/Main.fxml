@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Pane?>
+
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.text.Text?>
+<Pane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.172-ea"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ceadeal.javafxboot.ctrl.MainCtrl">
+
+    <!--    <Button fx:id="btnChooseFile" layoutX="179.0" layoutY="114.0" mnemonicParsing="false" text="选择要清洗文件夹"-->
+    <!--            onAction="#onBtnChooseFileClick"/>-->
+
+
+    <VBox>
+        <fx:define>
+            <ToggleGroup fx:id="myToggleGroup"/>
+        </fx:define>
+        <children>
+            <RadioButton layoutX="110.0" layoutY="0" style="" text="免费版" selected="true" toggleGroup="$myToggleGroup"/>
+            <RadioButton layoutX="160.0" layoutY="0" text="付费版" toggleGroup="$myToggleGroup"/>
+        </children>
+    </VBox>
+    <Text layoutX="160.0" layoutY="100">
+
+    </Text>
+
+    <Button fx:id="btnChooseFile" text="选择要清洗文件夹" onAction="#onBtnChooseFileClick" layoutX="179.0" layoutY="0"
+            style="-fx-min-height: 50; -fx-min-width: 50;-fx-background-color: #337ab7;">
+    </Button>
+
+
+</Pane>
